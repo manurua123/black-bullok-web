@@ -1,18 +1,19 @@
 .body{
   margin: 0;
-
   background-color: #181306;
   height:100%;
 
 }
 
 .Constructionconteiner {
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
   position: relative;
   background-color: #181306 !important;
   height:100%;
 }
+
+
 .logoHome {
   width: 20%;
   height: auto;
@@ -27,12 +28,12 @@
 .textTopConteiner{
   width: 30%;
   position: absolute;
-  top: 5%;
+  top: 0%;
   left: 0%;
 }
 .textLocationConteiner{
   position: absolute;
-  bottom: 5%;
+  bottom: 2%;
   left: 0%;
   writing-mode: vertical-lr;
 }
@@ -42,12 +43,12 @@
 }
 .textContacContainer{
   position: absolute;
-  bottom: 5%;
+  bottom: 0%;
   right: 0%;
 }
 .Constructionconteiner p{
   color: #F1EFE9;
-  font-size: 2em;
+  font-size: 1em;
 }
 .Constructionconteiner a{text-decoration: none;
 color: #F1EFE9 ;}
@@ -60,7 +61,7 @@ color: #F1EFE9 ;}
   border-left: 50px solid transparent;
   border-top: 50px solid #F1EFE9;
   position: absolute;
-  top: 5%;
+  top: 2%;
   right: 0;
 }
 
@@ -68,7 +69,7 @@ color: #F1EFE9 ;}
 @media only screen and (max-width: 600px) {
   .Constructionconteiner p{
     color: #F1EFE9;
-    font-size:1.5em;
+    font-size:1em;
   }
 
   .logoHome {
