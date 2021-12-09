@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: Karantina;
+  src: url(assets/font/Karantina-Bold.ttf) format("opentype");
+}
+
+
+@font-face {
+  font-family: Antonio;
+  src: url(assets/font/Antonio-VariableFont_wght.ttf) format("opentype");
+}
+
+html, body { height: 100%;  scroll-behavior: smooth; }
+body { margin: 0;
+
+
+}
+.fas{ font-family: 'Font Awesome 5 Brands' !important;}
+
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

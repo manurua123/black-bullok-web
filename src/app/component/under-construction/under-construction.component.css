@@ -1,0 +1,81 @@
+.body{
+  margin: 0;
+
+  background-color: #181306;
+  height:100%;
+
+}
+
+.Constructionconteiner {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  background-color: #181306 !important;
+  height:100%;
+}
+.logoHome {
+  width: 20%;
+  height: auto;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+}
+.logoHome img {
+  width: 100%;
+  height: auto;
+}
+.textTopConteiner{
+  width: 30%;
+  position: absolute;
+  top: 5%;
+  left: 0%;
+}
+.textLocationConteiner{
+  position: absolute;
+  bottom: 5%;
+  left: 0%;
+  writing-mode: vertical-lr;
+}
+.textLocationConteiner img{
+  height: 1.5em;
+
+}
+.textContacContainer{
+  position: absolute;
+  bottom: 5%;
+  right: 0%;
+}
+.Constructionconteiner p{
+  color: #F1EFE9;
+  font-size: 2em;
+}
+.Constructionconteiner a{text-decoration: none;
+color: #F1EFE9 ;}
+.Constructionconteiner a:hover{
+  color: yellow;
+}
+.triangulo{
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-top: 50px solid #F1EFE9;
+  position: absolute;
+  top: 5%;
+  right: 0;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .Constructionconteiner p{
+    color: #F1EFE9;
+    font-size:1.5em;
+  }
+
+  .logoHome {
+    width: 70%;
+    height: auto;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+  }
+}
