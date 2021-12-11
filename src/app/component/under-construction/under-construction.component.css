@@ -1,24 +1,24 @@
 .body{
   margin: 0;
-  background-color: #181306;
+  background-image: url(../../../assets/img/fondo.jpg);
   height:100%;
-
 }
-
+h1{
+  font-size: 2em;
+  letter-spacing: 1
+}
 .Constructionconteiner {
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
   position: relative;
-  background-color: #181306 !important;
   height:100%;
 }
-
 
 .logoHome {
   width: 20%;
   height: auto;
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 40%;
 }
 .logoHome img {
@@ -28,47 +28,63 @@
 .textTopConteiner{
   width: 30%;
   position: absolute;
-  top: 0%;
+  top: 2%;
   left: 0%;
 }
 .textLocationConteiner{
   position: absolute;
-  bottom: 2%;
-  left: 0%;
-  writing-mode: vertical-lr;
+  bottom: 5%;
+  left: -2%;
+  padding: 0;
+  writing-mode: tb-rl;
+  transform: rotate(-180deg);
+
 }
 .textLocationConteiner img{
   height: 1.5em;
-
 }
 .textContacContainer{
   position: absolute;
-  bottom: 0%;
+  bottom: 2%;
   right: 0%;
 }
 .Constructionconteiner p{
-  color: #F1EFE9;
-  font-size: 1em;
+  font-size: 1.5em;
 }
 .Constructionconteiner a{text-decoration: none;
-color: #F1EFE9 ;}
+color: #1f1b0e ;}
 .Constructionconteiner a:hover{
-  color: yellow;
+  color: #F1EFE9 ;
 }
-.triangulo{
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-top: 50px solid #F1EFE9;
-  position: absolute;
-  top: 2%;
-  right: 0;
+
+#timer {
+position: absolute;
+  bottom: 22%;
+ left: 30%;
+	font-size: 3em;
+	font-weight: bold;
+  width: 40%;
+  text-align: center;
 }
+
+#timer div {
+	display: inline-block;
+	min-width: 90px;
+
+}
+#timer div span {
+
+	display: block;
+	margin-top: 15px;
+	font-size: .35em;
+	font-weight: 400;
+}
+
 
 
 @media only screen and (max-width: 600px) {
   .Constructionconteiner p{
-    color: #F1EFE9;
+
     font-size:1em;
   }
 
@@ -79,4 +95,48 @@ color: #F1EFE9 ;}
     top: 30%;
     left: 15%;
   }
+
+  #timer {
+    position: absolute;
+      bottom: 15%;
+      left: 0%;
+      font-size: 2em;
+      font-weight: bold;
+      width: 100%;
+      text-align: center;
+
+    }
+
+    #timer div {
+      display: inline-block;
+      min-width: 60px;
+
+    }
+    #timer div span {
+      display: block;
+      margin-top: 15px;
+      font-size: 0.5em;
+      font-weight: 400;
+    }
+
+
+    .textTopConteiner{
+      width: 100%;
+      position: absolute;
+      top: 1%;
+      left: 0%;
+    }
+
+    .textLocationConteiner{
+      position: absolute;
+      bottom: 5%;
+      left: -4%;
+      padding: 0;
+      writing-mode: tb-rl;
+        transform: rotate(-180deg);
+      font-size:1em ;
+    }
+
+
 }
+

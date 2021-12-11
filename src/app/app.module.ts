@@ -9,14 +9,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 //Component
 import { UnderConstructionComponent } from './component/under-construction/under-construction.component';
-import { NavbarComponent } from './component/navbar/navbar.component';
-import { ContactComponent } from './component/contact/contact.component';
-import { ServiceSectionComponent } from './component/service-section/service-section.component';
-import { HomeSectionComponent } from './component/home-section/home-section.component';
-import { MediaSectionComponent } from './component/media-section/media-section.component';
+
 const rutas: Routes = [
   { path: '', component: UnderConstructionComponent},
-  { path: 'construction', component: UnderConstructionComponent},
+
 
 ];
 @NgModule({
@@ -24,11 +20,7 @@ const rutas: Routes = [
   declarations: [
     AppComponent,
     UnderConstructionComponent,
-    NavbarComponent,
-    ContactComponent,
-    ServiceSectionComponent,
-    HomeSectionComponent,
-    MediaSectionComponent
+
   ],
   imports: [
     BrowserModule,
