@@ -27,7 +27,7 @@ export class UnderConstructionComponent implements OnInit {
       days: 0, hours: 0, minutes: 0, seconds: 0
     };
     // Creamos la fecha a partir de la fecha en formato string AAAA-MM-dd HH:mm:ss
-    this.finishDate = new Date('2022-1-10 00:00:1');
+    this.finishDate = new Date('January 10 2022 00:00:1');
 
     this.start().subscribe(_ => console.log("tik"));
   }
