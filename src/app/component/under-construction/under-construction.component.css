@@ -80,11 +80,34 @@ position: absolute;
 	font-weight: 400;
 }
 
+/* @media only screen and (-webkit-min-device-pixel-ratio: 2) { */
+ 
+  @media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
 
+  .logoHome {
+    width: 22%;
+    height: auto;
+    position: absolute;
+    top: 20%;
+    left: 39%;
+  }
+
+  #timer {
+    position: absolute;
+      bottom: 24%;
+     left: 30%;
+      font-size: 3em;
+      font-weight: bold;
+      width: 40%;
+      text-align: center;
+    }
+}}
 
 @media only screen and (max-width: 600px) {
-  .Constructionconteiner p{
+  
 
+  .Constructionconteiner p{
     font-size:1em;
   }
 
@@ -139,4 +162,6 @@ position: absolute;
 
 
 }
+
+
 
