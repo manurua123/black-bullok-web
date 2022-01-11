@@ -1,6 +1,8 @@
 import { Component, OnInit,Input } from '@angular/core';
 import { interval } from 'rxjs/internal/observable/interval';
 import { map } from 'rxjs/internal/operators/map';
+import { Title } from '@angular/platform-browser';
+import { SeoService } from 'src/app/service/seo.service';
 
 @Component({
   selector: 'app-under-construction',
@@ -16,12 +18,15 @@ export class UnderConstructionComponent implements OnInit {
   };
   @Input() finishDateString: string = '';
   finishDate: Date = new Date();
-  constructor() {
-
-
-   }
+  constructor( private title:Title, private seo: SeoService) {}
 
   ngOnInit(): void {
+    let t:string="Black-Bullock";
+    this.title.setTitle(t);
+    this.seo.generateTag({
+      title:"Black-Bullock"
+    });
+
     // Inicializamos el momento que falta hasta llegaral tiempo objetivo con valores en 0
     this.time = {
       days: 0, hours: 0, minutes: 0, seconds: 0
@@ -29,13 +34,13 @@ export class UnderConstructionComponent implements OnInit {
     // Creamos la fecha a partir de la fecha en formato string AAAA-MM-dd HH:mm:ss
     this.finishDate = new Date('January 10 2022 00:00:1');
 
-    this.start().subscribe(_ => console.log("tik"));
+    this.start().subscribe();
   }
   updateTime() {
 
     const now = new Date();
     const diff = this.finishDate.getTime() - now.getTime();
-    console.log(diff)
+
 
     // Cálculos para sacar lo que resta hasta ese tiempo objetivo / final
     const days = Math.floor(diff / (1000 * 60 * 60 * 24));
