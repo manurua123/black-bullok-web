@@ -2,6 +2,7 @@
   margin: 0;
   background-image: url(../../../assets/img/fondo.jpg);
   height:100%;
+  color: #251d16
 }
 h1{
   font-size: 2em;
@@ -41,7 +42,8 @@ h1{
 
 }
 .textLocationConteiner img{
-  height: 1.5em;
+  height: 0.9em;
+
 }
 .textContacContainer{
   position: absolute;
@@ -52,7 +54,7 @@ h1{
   font-size: 1.5em;
 }
 .Constructionconteiner a{text-decoration: none;
-color: #1f1b0e ;}
+color: #251d16 ;}
 .Constructionconteiner a:hover{
   color: #F1EFE9 ;
 }
@@ -81,7 +83,7 @@ position: absolute;
 }
 
 /* @media only screen and (-webkit-min-device-pixel-ratio: 2) { */
- 
+
   @media not all and (min-resolution:.001dpcm)
 { @supports (-webkit-appearance:none) and (stroke-color:transparent) {
 
@@ -105,7 +107,7 @@ position: absolute;
 }}
 
 @media only screen and (max-width: 600px) {
-  
+
 
   .Constructionconteiner p{
     font-size:1em;
