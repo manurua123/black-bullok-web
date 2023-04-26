@@ -4,34 +4,25 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MaterialModule } from './material/material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { Routes, RouterModule } from '@angular/router'
+import { Routes, RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 //Component
 import { UnderConstructionComponent } from './component/under-construction/under-construction.component';
+import { HomeComponent } from './component/home/home.component';
+import { CaracteristicasComponent } from './component/caracteristicas/caracteristicas.component';
 
-
-const rutas: Routes = [
-  { path: '', component: UnderConstructionComponent},
-];
 @NgModule({
-
-  declarations: [
-    AppComponent,
-    UnderConstructionComponent,
-
-
-  ],
+  declarations: [AppComponent, UnderConstructionComponent,HomeComponent,CaracteristicasComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
     BrowserAnimationsModule,
     BrowserModule,
-    RouterModule.forRoot(rutas),
-    FlexLayoutModule
+    FlexLayoutModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

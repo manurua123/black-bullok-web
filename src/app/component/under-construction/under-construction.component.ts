@@ -1,4 +1,4 @@
-import { Component, OnInit,Input } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { interval } from 'rxjs/internal/observable/interval';
 import { map } from 'rxjs/internal/operators/map';
 import { Title } from '@angular/platform-browser';
@@ -7,7 +7,7 @@ import { SeoService } from 'src/app/service/seo.service';
 @Component({
   selector: 'app-under-construction',
   templateUrl: './under-construction.component.html',
-  styleUrls: ['./under-construction.component.css']
+  styleUrls: ['./under-construction.component.css'],
 })
 export class UnderConstructionComponent implements OnInit {
   time!: {
@@ -15,30 +15,31 @@ export class UnderConstructionComponent implements OnInit {
     hours: number;
     minutes: number;
     seconds: number;
-
   };
   @Input() finishDateString: string = '';
   finishDate: Date = new Date();
-  constructor( private title:Title, private seo: SeoService) {}
+  constructor(private title: Title, private seo: SeoService) {}
 
   ngOnInit(): void {
-    let t:string="Black-Bullock";
+    let t: string = 'Black-Bullock';
     this.title.setTitle(t);
     this.seo.generateTag({
-      title:"Black-Bullock"
+      title: 'Black-Bullock',
     });
 
     // Inicializamos el momento que falta hasta llegaral tiempo objetivo con valores en 0
     this.time = {
-      days: 0, hours: 0, minutes: 0, seconds: 0,
+      days: 0,
+      hours: 0,
+      minutes: 0,
+      seconds: 0,
     };
     // Creamos la fecha a partir de la fecha en formato string AAAA-MM-dd HH:mm:ss
-    this.finishDate = new Date('December 5 2022 00:00:1');
+    this.finishDate = new Date('December 5 2023 00:00:1');
 
     this.start().subscribe();
   }
   updateTime() {
-
     const now = new Date();
     const diff = this.finishDate.getTime() - now.getTime();
 
@@ -48,13 +49,11 @@ export class UnderConstructionComponent implements OnInit {
     const mins = Math.floor(diff / (1000 * 60));
     const secs = Math.floor(diff / 1000);
 
-
     // La diferencia que se asignará para mostrarlo en la pantalla
     this.time.days = days;
     this.time.hours = hours - days * 24;
     this.time.minutes = mins - hours * 60;
     this.time.seconds = secs - mins * 60;
-
   }
 
   start() {
