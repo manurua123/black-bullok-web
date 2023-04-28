@@ -1,0 +1,70 @@
+<div class="contenedor">
+  <div class="imagenFondo">
+    <div class="nosotros">
+      <div class="nosotrosLogo">
+        <img src="assets\img2\img bbk web pcMesa de trabajo 8.svg" />
+      </div>
+
+      <div class="contenido">
+        <img src="assets\img2\img bbk web pcMesa de trabajo 14.svg" />
+        <h2>BLACK-BULLOCK</h2>
+        <h3>
+          Somos Black Bullock, una empresa joven y dinámica especializada en
+          servicios de construcción, ingeniería y desarrollo urbano.
+        </h3>
+        <p>
+          Nos enfocamos en brindar un servicio personalizado, soluciones
+          innovadoras y de alta calidad para satisfacer las necesidades de
+          nuestros clientes. En Black Bullock contamos con profesionales
+          altamente capacitados para asegurar la calidad y seguridad de los
+          proyectos en cada etapa de su desarrollo.
+        </p>
+        <p>
+          ¿Querés cotizar tu proyecto? <span>Contactanos</span
+          ><img src="assets\img2\img bbk web pcMesa de trabajo 15.svg" />
+        </p>
+      </div>
+      <img src="assets\img2\img bbk web pcMesa de trabajo 21.svg" />
+    </div>
+
+    <div class="contacto">
+      <div class="contactoLogo">
+        <img src="assets\img2\img bbk web pcMesa de trabajo 9.svg" />
+      </div>
+      <div class="formulario">
+        <h2>Contactanos</h2>
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" color="primary" >
+          <mat-form-field class="my-form-field" appearance="fill">
+            <mat-label>Nombre Completo</mat-label>
+            <input matInput formControlName="name" />
+          </mat-form-field>
+           <mat-form-field   class="my-form-field"appearance="fill">
+            <mat-label>Empresa</mat-label>
+            <input matInput formControlName="empresa" />
+          </mat-form-field>
+
+          <mat-form-field  class="my-form-field" appearance="fill">
+            <mat-label>Teléfono</mat-label>
+            <input matInput formControlName="phone" />
+          </mat-form-field>
+
+          <mat-form-field   class="my-form-field"appearance="fill">
+            <mat-label>Correo electrónico</mat-label>
+            <input matInput formControlName="email" />
+          </mat-form-field>
+
+          <mat-form-field   class="my-form-field"appearance="fill">
+            <mat-label>Mensaje</mat-label>
+            <textarea matInput formControlName="message"></textarea>
+          </mat-form-field>
+
+          <button type="submit">
+            Enviar
+          </button>
+        </form>
+      </div>
+    </div>
+
+
+  </div>
+</div>

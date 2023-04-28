@@ -1,0 +1,126 @@
+.contenedor {
+  width: 100%;
+  padding-top: 2vh;
+  top: 70vh;
+  position: relative;
+  font-family: 'Archivo', sans-serif;
+  background-color: #161616;
+}
+
+.imagenFondo {
+  width: 100%;
+  margin: auto;
+  height: 100%;
+  z-index: -100;
+  background-image: url(../../../assets/img2/fondoNosotros.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 98%;
+}
+
+
+.nosotros {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  position: relative;
+}
+
+.nosotros img {
+  width: 40vw;
+}
+
+.nosotrosLogo {
+  position: absolute;
+  top: 40%;
+  left: 2vw;
+  padding: 0;
+  z-index: 100
+}
+
+.nosotrosLogo img {
+  height: 12vh;
+  width: 100%;
+}
+
+
+.contenido {
+  width: 50vw;
+  padding: 10vw;
+  font-family: 'Antonio', sans-serif;
+}
+
+.contenido h2 {
+  margin: 0px;
+}
+
+.contenido h3 {
+  font-family: 'Antonio', sans-serif;
+  margin: 0vw 0 3vw 0;
+}
+
+.contenido span {
+  font-weight: 700;
+}
+
+.contenido p img {
+  height: 1vw;
+  margin-left: 0px;
+  width: 2vw;
+}
+
+.contenido img {
+  width: 5vw;
+}
+
+/* CONTACTOS */
+
+.contacto {
+  margin-top: 10vw;
+  position: relative;
+  width: 80vw;
+  left: 10vw;
+  height: 100vh;
+  color: white;
+}
+
+.contactoLogo {
+  position: absolute;
+  top: 20%;
+  left: -8vw;
+  padding: 0;
+  z-index: 100;
+}
+
+.contactoLogo img {
+  height: 12vh;
+}
+
+.formulario {
+  width: 80%;
+}
+
+mat-form-field {
+  width: 100%;
+  color: white;
+
+}
+
+mat-label {
+  color: white;
+
+}
+
+input {
+  color: white;
+
+}
+
+my-form-field {
+  border-color: white;
+}
+
