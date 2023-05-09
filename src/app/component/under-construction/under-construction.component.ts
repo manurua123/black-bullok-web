@@ -35,7 +35,7 @@ export class UnderConstructionComponent implements OnInit {
       seconds: 0,
     };
     // Creamos la fecha a partir de la fecha en formato string AAAA-MM-dd HH:mm:ss
-    this.finishDate = new Date('December 5 2023 00:00:1');
+    this.finishDate = new Date('May 30 2023 00:00:1');
 
     this.start().subscribe();
   }

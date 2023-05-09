@@ -1,13 +1,15 @@
 .body {
   margin: 0;
   background-image: url(../../../assets/img/fondo.jpg);
-  height: 100%;
-  color: #251d16
+  height: 100vh;
+  color: #251d16;
+  font-family: 'Antonio', sans-serif;
 }
 
 h1 {
   font-size: 2em;
-  letter-spacing: 1
+  letter-spacing: 1;
+    font-family: 'Antonio', sans-serif;
 }
 
 .Constructionconteiner {

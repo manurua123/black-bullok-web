@@ -1,0 +1,40 @@
+<div class="contacto">
+      <div id="Contactanos"></div>
+      <div class="contactoLogo" data-aos="fade-right" data-aos-duration="700">
+        <img src="assets\img2\img bbk web pcMesa de trabajo 9.svg" />
+      </div>
+      <div class="formulario">
+        <h2 data-aos="fade-down"  data-aos-duration="1000" >Contactanos</h2>
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" color="primary">
+          <mat-form-field  data-aos="fade-up"  data-aos-duration="1000" class="my-form-field" appearance="fill">
+            <mat-label>Nombre Completo</mat-label>
+            <input matInput formControlName="name" />
+          </mat-form-field>
+          <mat-form-field  data-aos="fade-up"  data-aos-duration="1000"class="my-form-field" appearance="fill">
+            <mat-label>Empresa</mat-label>
+            <input matInput formControlName="empresa" />
+          </mat-form-field>
+
+          <mat-form-field data-aos="fade-up"  data-aos-duration="1000" class="my-form-field" appearance="fill">
+            <mat-label>Teléfono</mat-label>
+            <input matInput formControlName="phone" />
+          </mat-form-field>
+
+          <mat-form-field data-aos="fade-up"  data-aos-duration="1000"  class="my-form-field" appearance="fill">
+            <mat-label>Correo electrónico</mat-label>
+            <input matInput formControlName="email" />
+          </mat-form-field>
+
+          <mat-form-field data-aos="fade-up"  data-aos-duration="1000"class="my-form-field" appearance="fill">
+            <mat-label>Mensaje</mat-label>
+            <textarea matInput formControlName="message"  style="resize:none" ></textarea>
+          </mat-form-field>
+          <p data-aos="fade-up"  data-aos-duration="700" >*Datos obligatorios</p>
+          <button data-aos="fade-up"  data-aos-duration="1000" type="submit">Enviar</button>
+        </form>
+      </div>
+
+
+    </div>
+
+

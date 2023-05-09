@@ -1,8 +1,5 @@
 import { Component } from '@angular/core';
-import { Router, NavigationEnd } from '@angular/router';
-
-import { filter } from 'rxjs/operators';
-
+import * as AOS from 'aos'
 
 @Component({
   selector: 'app-root',
@@ -12,5 +9,9 @@ import { filter } from 'rxjs/operators';
 export class AppComponent {
   title = 'backBullok-web';
 
+  ngOnInit(){
+   AOS.init()
+   window.addEventListener('load',AOS.refresh)
+  }
 
 }

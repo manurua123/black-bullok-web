@@ -1,0 +1,163 @@
+.contacto {
+  background-color: transparent;
+  width: 100%;
+  padding: 10vh 10%  5vh 10%;
+  height: 100vh;
+  color: white;
+  position: relative;
+}
+
+#Contactanos {
+  position: absolute;
+  top: 2.3vh;
+  width: 10px;
+  height: 10px;
+}
+
+
+
+.contacto h2 {
+  font-size: 2vw;
+  font-family: 'Antonio', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 5vw;
+}
+
+.contactoLogo {
+  position: absolute;
+  top: 15%;
+  left: 2vw;
+  padding: 0;
+  z-index: 100;
+}
+
+.contactoLogo img {
+  height: 12vh;
+}
+
+.formulario {
+  width: 80%;
+}
+
+.formulario p {
+  font-size: 0.6vw;
+  color: #a0a0a0;
+  font-family: 'Antonio', sans-serif;
+}
+
+mat-form-field {
+  width: 100%;
+  color: white;
+
+}
+
+mat-label {
+  color: white;
+
+}
+
+input {
+  color: white;
+  font-size: large;
+  letter-spacing: 0.1em
+}
+
+textarea {
+  height: 5vw;
+  max-height: 10vh;
+  resize: none;
+  font-size: large;
+  letter-spacing: 0.1em
+}
+
+my-form-field {
+  border-color: white;
+}
+
+
+
+.formulario button {
+  margin-top: 2vw;
+  font-family: 'Antonio', sans-serif !important;
+  background-color: #ffca00;
+  border: none;
+  position: relative;
+  padding: 0.5vw 0vw;
+  width: 5vw;
+  margin-left: 37vw;
+}
+
+
+.formulario button::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  border-bottom: 0.5vw solid #232323;
+  border-left: 0.5vw solid #ffca00;
+}
+
+@media (max-width: 600px) {
+
+  #Contactanos {
+    position: absolute;
+    top: 0vh;
+    width: 10px;
+    height: 10px;
+  }
+
+  .contacto {
+    background-color: transparent;
+    width: 100%;
+    margin-top: 5vh;
+    padding: 5vh 8%;
+    height: auto;
+    color: white;
+    position: relative;
+  }
+
+  .contactoLogo {
+    display: none;
+  }
+
+  .contacto h2 {
+    font-size: x-large;
+    font-family: 'Antonio', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 5vw;
+  }
+
+  .formulario {
+    width: 99%;
+    margin: auto;
+  }
+
+  .formulario p {
+    font-size: 0.8em;
+    color: #a0a0a0;
+    font-family: 'Antonio', sans-serif;
+  }
+
+  textarea {
+    height: 5vh;
+    max-height: 10vh;
+    resize: none;
+    font-size: large;
+    letter-spacing: 0.1em
+  }
+
+  .formulario button {
+    margin-top: 1vh;
+    font-family: 'Antonio', sans-serif !important;
+    background-color: #ffca00;
+    border: none;
+    position: relative;
+    padding: 1vw 5vw;
+    width: 20vw;
+    margin-left: 0vw;
+  }
+  .formulario button::before {
+    border-bottom: 4vw solid transparent;
+    border-left: 2vw solid #ffca00;
+  }
+}

@@ -1,0 +1,185 @@
+.footer {
+  color: white;
+  background-color: #161616;
+  width: 100%;
+  z-index: 999
+}
+
+.footer .contenido {
+  width: 80vw;
+  margin: auto;
+  padding: 2vw 2vw;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  font-size: 0.8vw !important;
+  border-bottom: 2px solid white;
+
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.contenido p {
+  font-size: 0.7vw;
+  line-height: 1vw;
+  margin-bottom: 0px;
+
+}
+
+a {
+  color: white !important;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffca00 !important;
+  text-decoration: none;
+}
+
+.contenido img {
+  height: 3vw;
+}
+
+.menuFooter {
+  padding: 0.5vw 0.7vw 5vw 0px;
+  width: 88vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: 'Antonio', sans-serif !important;
+}
+
+.menuFooter a {
+  width: 10%;
+  text-align: right;
+
+}
+
+.redes {
+  height: 3vw;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0px;
+
+}
+
+.socialIcons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.25vw;
+  height: 2.5vw;
+  width: 2.5vw;
+  fill: #161616;
+  background-color: white;
+}
+
+.socialIcons:hover {
+  fill: #161616;
+  background-color: #ffca00;
+}
+
+.socialIcons svg {
+  height: 1.5vw;
+  width: 1.5vw;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding-top: 10vh;
+    color: white;
+    background-color: #161616;
+    width: 100%;
+    z-index: 999;
+    border: none;
+  }
+
+  .footer .contenido {
+    width: 80%;
+    margin: auto;
+    padding: 1vw 2vw;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    font-size: 0.8vw !important;
+    border: none;
+
+  }
+
+  .footer .texto {
+    padding: 3vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid white;
+  }
+
+  .footer .texto a {
+    font-size: 4.5em;;
+    width: 100%;
+    line-height: normal;
+    margin-bottom: 0.5em;
+  }
+
+  .footer .texto p {
+    font-size:4.5em;
+    line-height: normal;
+
+
+  }
+
+
+  .contenido img {
+    margin: 2vh 0px;
+    width: 30%;
+    height: auto;
+  }
+
+  .menuFooter {
+    display: none;
+
+  }
+
+
+  .redes {
+    width: 28vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 2vh;
+
+  }
+
+  .socialIcons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 12vw;
+    width: 12vw;
+    fill: #161616;
+    background-color: white;
+  }
+
+  .socialIcons:hover {
+    fill: #161616;
+    background-color: #ffca00;
+  }
+
+  .socialIcons svg {
+    height: 8vw;
+    width: 8vw;
+  }
+
+}

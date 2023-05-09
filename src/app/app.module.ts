@@ -5,24 +5,31 @@ import { AppComponent } from './app.component';
 import { MaterialModule } from './material/material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
-
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 //Component
 import { UnderConstructionComponent } from './component/under-construction/under-construction.component';
-import { HomeComponent } from './component/home/home.component';
-import { CaracteristicasComponent } from './component/caracteristicas/caracteristicas.component';
-import { NosotrosComponent } from './component/nosotros/nosotros.component';
+
+import { HttpClientModule } from '@angular/common/http';
+import { portadaComponent } from './component/01_portada/01_portada.component';
+import { serviciosComponent } from './component/02_servicios/02_servicios.component';
+import { nosotrosComponent } from './component/03_nosotros/03_nosotros.component';
+import { contactoComponent } from './component/04_contacto/04_contacto.component';
+import { footerComponent } from './component/05_footer/05_footer.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
     AppComponent,
     UnderConstructionComponent,
-    HomeComponent,
-    CaracteristicasComponent,
-    NosotrosComponent,
+    portadaComponent,
+    serviciosComponent,
+    nosotrosComponent,
+    contactoComponent,
+    footerComponent,
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
@@ -32,8 +39,11 @@ import { NosotrosComponent } from './component/nosotros/nosotros.component';
     FormsModule,
     FormsModule,
     ReactiveFormsModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule {
+
+}

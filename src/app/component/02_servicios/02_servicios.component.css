@@ -1,0 +1,278 @@
+.contenedor {
+  width: 100%;
+  position: relative;
+  font-family: 'Archivo', sans-serif;
+
+}
+
+
+
+#Servicios {
+  position: absolute;
+  top: -40vh;
+  width: 10px;
+  height: 10px;
+
+}
+
+.contenedor video {
+  min-width: 100%;
+  position: fixed;
+  min-height: 100%;
+  max-height: 50vh;
+  top: 0;
+  z-index: -10;
+}
+
+
+
+.videoMB {
+  display: none;
+}
+
+.serviciosLogo {
+  position: absolute;
+  top: 0vh;
+  left: 2vw;
+  padding: 0;
+  z-index: 100
+}
+
+.serviciosLogo img {
+  height: 12vh;
+}
+
+.cuerpo {
+  font-size: 1vw;
+  margin-top: 100vh;
+  padding-bottom: 0vh;
+  height: 50vh;
+  background-color: #161616;
+  width: 100%;
+}
+
+.elementosMB {
+  display: none;
+}
+
+.elementos {
+  top: -5vw;
+  left: 10vw;
+  width: 80vw;
+  position: absolute;
+  padding: 3vh 10vw 6vh 10vw;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.elementos::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  border-bottom: 2vw solid #161616;
+  border-left: 2vw solid white;
+
+}
+
+
+
+.elem {
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+hr {
+  width: 20vw;
+  height: 0.2vw;
+  opacity: 1;
+}
+
+.elem h2 {
+  font-family: 'Antonio', sans-serif;
+  font-weight: 700;
+  font-size: 1.5vw;
+  align-items: center;
+  line-height: normal;
+
+}
+
+.elementosMB {
+  display: none;
+}
+
+.elem p {
+  padding-top: 1vw;
+  display: flex;
+  font-size: 1vw;
+  font-family: 'Archivo', sans-serif;
+  font-weight: 200;
+  height: 100%;
+  align-items: flex-start;
+  line-height: normal;
+}
+
+.elem_icono {
+  width: 6%;
+  margin: 0vh auto 5vh auto;
+
+}
+
+.elem_icono img {
+  width: 100%;
+}
+
+.arriba {
+  position: fixed;
+  right: 2vw;
+  bottom: 2vh;
+  text-decoration: none;
+  color: #232323;
+  z-index: 99999;
+}
+
+.arriba a {
+  text-decoration: none;
+  color: #232323;
+}
+
+@media (max-width: 600px) {
+
+  #Servicio {
+      position: absolute;
+      top: -20vh;
+      width: 10px;
+      height: 10px;
+
+    }
+  .serviciosLogo {
+    display: none
+  }
+
+  .contenedor {
+    height: 60vh;
+  }
+
+  .contenedor video {
+    position: fixed;
+    min-height: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -999;
+  }
+
+  .videoDT {
+    display: none;
+  }
+
+  .videoMB {
+    display: block;
+  }
+
+  .cuerpo {
+    display: none;
+  }
+
+  .elementosMB {
+    margin-top: 40vh;
+    left: 0;
+    width: 100vw;
+    position: relative;
+    padding: 3vh 10vw 6vh 10vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .elementos {
+    display: none;
+  }
+
+  .elementos::before {
+    display: none;
+  }
+
+  .elem {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .elem h2 {
+    font-family: 'Antonio', sans-serif;
+    font-weight: 700;
+    font-size: 7vw;
+    margin-top: 1vh;
+    align-items: center;
+  }
+
+
+  .elem p {
+    padding-top: 1vh;
+    margin-bottom: 7vh;
+    display: flex;
+    font-size: 4vw;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 200;
+    height: auto;
+    align-items: flex-start;
+  }
+
+  .elem_icono {
+
+    width: 100%;
+    margin: auto;
+    margin-bottom: 5vh;
+
+
+  }
+
+  .elem_icono img {
+    width: 5%;
+    margin-top: 5vh;
+  }
+
+
+  .iconMB {
+    position: absolute;
+    top: -5vh;
+    left: 40%;
+    width: 60%;
+    align-items: center;
+    display: block;
+
+  }
+  .primero{
+    top: -5vh;
+  }
+
+
+  .flechaprimero {
+
+    position: absolute;
+    top: -5vh;
+    left: 0vh;
+  }
+
+
+
+  .iconMB img {
+    width: 40%;
+  }
+
+
+}
