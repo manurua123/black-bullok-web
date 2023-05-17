@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { ContacFormService } from 'src/app/service/contacForm.service';
 
@@ -10,9 +10,9 @@ import { ContacFormService } from 'src/app/service/contacForm.service';
 })
 export class contactoComponent  {
 
-  contactForm: FormGroup;
+  contactForm: UntypedFormGroup;
 
-  constructor(private fb: FormBuilder, private snackBar: MatSnackBar, private formService: ContacFormService) {
+  constructor(private fb: UntypedFormBuilder, private snackBar: MatSnackBar, private formService: ContacFormService) {
     this.contactForm = this.fb.group({
       name: ['', Validators.required],
       empresa: ['', Validators.required],
