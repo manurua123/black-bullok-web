@@ -16,7 +16,6 @@ import { serviciosComponent } from './component/02_servicios/02_servicios.compon
 import { nosotrosComponent } from './component/03_nosotros/03_nosotros.component';
 import { contactoComponent } from './component/04_contacto/04_contacto.component';
 import { footerComponent } from './component/05_footer/05_footer.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -39,7 +38,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     FormsModule,
     FormsModule,
     ReactiveFormsModule,
-    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -44,11 +44,17 @@
   color: #a0a0a0;
   font-family: 'Antonio', sans-serif;
 }
-
+::ng-deep .mat-form-field-infix {
+}
 mat-form-field {
   width: 100%;
   color: white;
 
+}
+
+::ng-deep mat-label{
+    display: inline-block;
+      padding: 0.1em 0em !important;
 }
 
 mat-label {
@@ -56,10 +62,12 @@ mat-label {
 
 }
 
+
 input {
   color: white;
   font-size: large;
-  letter-spacing: 0.1em
+  letter-spacing: 0.1em;
+  line-height: 1.2em;
 }
 
 textarea {

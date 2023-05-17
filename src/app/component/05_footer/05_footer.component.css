@@ -14,8 +14,7 @@
   align-items: flex-end;
   justify-content: space-between;
   font-size: 0.8vw !important;
-  border-bottom: 2px solid white;
-
+  border-bottom: 1px solid white;
 }
 
 .texto {

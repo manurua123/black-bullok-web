@@ -24,8 +24,8 @@ export class contactoComponent  {
   onSubmit() {
     if (this.contactForm.valid) {
       this.formService.sendForm(this.contactForm.value);
+      this.contactForm.disable()
 
-      this.contactForm.reset();
     } else {
       this.snackBar.open(
         'Por favor complete todos los campos correctamente',

@@ -42,6 +42,10 @@
   height: 12vh;
 }
 
+.serviciosLogo svg {
+  height: 12vh;
+}
+
 .cuerpo {
   font-size: 1vw;
   margin-top: 100vh;
@@ -133,7 +137,7 @@ hr {
   bottom: 2vh;
   text-decoration: none;
   color: #232323;
-  z-index: 99999;
+  z-index: 100;
 }
 
 .arriba a {

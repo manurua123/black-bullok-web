@@ -20,6 +20,7 @@ export class serviciosComponent {
     let scrollDiv = document.getElementById('scrollDiv');
     let elementos = document.getElementById('elementos');
      let logo = document.getElementById('serviciosLogo');
+       let logo2 = document.getElementById('serviciosLogo2');
     let scrollPosition = window.pageYOffset;
 
     if (screen.width > 900) {
@@ -29,11 +30,24 @@ export class serviciosComponent {
           elementos.style.width = '98vw';
           elementos.style.left = '0.5vw';
           elementos.style.margin = 'auto';
-
+          if(logo && logo2) {
+            logo.style.opacity='0'
+            logo.style.transition = ' 1s';
+             logo2.style.opacity = '1';
+             logo2.style.transition = ' 1s';
+          }
         } else {
           elementos.style.transition = ' 1s';
           elementos.style.width = '80vw';
           elementos.style.left = '10vw';
+              if (logo && logo2) {
+                logo.style.opacity = '1';
+                logo.style.transition = ' 1s';
+                logo2.style.opacity = '0';
+                logo2.style.transition = ' 1s';
+              }
+
+
 
         }
       }
