@@ -1,6 +1,6 @@
 <div class="contenedor" id="scrollDiv">
   <div class="video">
-    <video class="videoDT" [muted]="true" autoplay loop >
+    <video class="videoDT" [muted]="true" autoplay loop>
       <source
         class="videoDT"
         src="assets/bbk capsula web comprimido.mp4"
@@ -16,25 +16,28 @@
       Tu navegador no soporta HTML5 video.
     </video>
   </div>
-  <div class="serviciosLogo" >
-    <img id="serviciosLogo" src="assets\img2\img bbk web pcMesa de trabajo 7.svg" />
-
+  <div class="serviciosLogo">
+    <img
+      id="serviciosLogo"
+      src="assets\img2\img bbk web pcMesa de trabajo 7.svg"
+    />
   </div>
-   <div class="serviciosLogo" ><img id="serviciosLogo2"src="assets\img2\img bbk web pcMesa de trabajo 7b.svg" />
-</div>
+  <div class="serviciosLogo">
+    <img
+      id="serviciosLogo2"
+      src="assets\img2\img bbk web pcMesa de trabajo 7b.svg"
+    />
+  </div>
   <div class="cuerpo">
     <div id="Servicios"></div>
     <div class="elementos" id="elementos">
       <div class="elem">
         <div class="titulo">
           <div class="elem_icono">
-            <img src="assets\img2\img bbk web pcMesa de trabajo 13.svg" />
+            <img src="assets\img2\flechita 1.svg" />
           </div>
           <hr style="background-color: #ffca02" />
-          <h2>
-            Obras Civiles & <br />
-            Movimiento de Suelos
-          </h2>
+          <h2>Movimiento de Suelos</h2>
         </div>
         <p>
           Nuestro servicio implica actividades de construcción y movimiento de
@@ -50,10 +53,10 @@
       <div class="elem">
         <div class="titulo">
           <div class="elem_icono">
-            <img src="assets\img2\img bbk web pcMesa de trabajo 13.svg" />
+            <img src="assets\img2\flechita 2.svg" />
           </div>
           <hr style="background-color: #829c75" />
-          <h2>Desarrollo Urbanístico<br />Infraestructura</h2>
+          <h2>Infraestructura Urbana</h2>
         </div>
         <p>
           El servicio de Desarrollo Urbanístico se enfoca en crear barrios
@@ -67,10 +70,10 @@
       <div class="elem">
         <div class="titulo">
           <div class="elem_icono">
-            <img src="assets\img2\img bbk web pcMesa de trabajo 13.svg" />
+            <img src="assets\img2\flechita 3.svg" />
           </div>
           <hr style="background-color: #a1a6ac" />
-          <h2>Ingeniería<br />Proyecto y Desarrollo</h2>
+          <h2>Proyecto de Ingeniería</h2>
         </div>
         <p>
           Brindamos soluciones técnicas para la realización de proyectos de
@@ -87,7 +90,6 @@
       </div>
     </div>
   </div>
-
 </div>
 
 <div
@@ -174,14 +176,15 @@
   </div>
 </div>
 
-<button
-  data-aos="fade-up"
-  mat-mini-fab
-  id="arriba"
-  color="primary"
-  class="arriba"
->
-  <a href="#home">
-    <mat-icon>arrow_upward</mat-icon>
+<div class="botonesFix arriba">
+  <a href="/data">
+  <button data-aos="fade-up" mat-stroked-button color="primary">
+    Porfolio
+  </button>
   </a>
-</button>
+  <button data-aos="fade-up" mat-mini-fab color="primary">
+    <a href="#home">
+      <mat-icon>arrow_upward</mat-icon>
+    </a>
+  </button>
+</div>

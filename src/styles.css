@@ -20,7 +20,8 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% auto;
-    /* background-attachment: fixed; */
+
+  /* background-attachment: fixed; */
 }
 
 .item {
@@ -49,10 +50,11 @@ body {
   background: url('assets/gifCarga.gif') 50% 50% no-repeat #ffca00;
   background-size: 10% auto;
   opacity: 1;
+  transform: scaleX(-1);
 }
 
 @media (max-width: 600px) {
-.fondo {
+  .fondo {
     background-color: #161616;
     background-image: url(assets/img2/fondoNosotros.svg);
     background-repeat: no-repeat;
@@ -60,11 +62,12 @@ body {
     background-size: 100% auto;
     background-attachment: fixed;
   }
-    .loader {
 
-      background-size: 20% auto;
+  .loader {
 
-    }
+    background-size: 20% auto;
+
+  }
 }
 
 
@@ -3134,4 +3137,26 @@ td.mat-footer-cell {
 
 .snackbar button {
   color: #ffca00;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+
+
+::-webkit-scrollbar-track {
+  background: #ddd;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #666;
+}
+
+body {
+  overflow-x: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }

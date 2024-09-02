@@ -133,11 +133,14 @@ hr {
 
 .arriba {
   position: fixed;
+  display: flex;
+  justify-content: space-between;
   right: 2vw;
   bottom: 2vh;
   text-decoration: none;
   color: #232323;
   z-index: 100;
+  width: 7%;
 }
 
 .arriba a {
